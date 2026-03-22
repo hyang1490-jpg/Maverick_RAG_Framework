@@ -1,0 +1,26 @@
+[
+    {
+        "target_id": "Steve Jobs (Apple Co-Founder)",
+        "archetype": "现实扭曲者 (The Reality Distorter)",
+        "core_cognitive_bias": "将商业领域的「现实扭曲力场」错误迁移至病理学领域。认为改变商业世界的意志力，可以直接改变生物细胞的病理进程。",
+        "fatal_action": "在最佳手术窗口期，拒绝现代医学长达9个月，转而尝试果汁排毒、针灸和草药等替代疗法。",
+        "trigger_condition": "当面临对身体失去绝对控制权的诊断时，激发强烈的反医学防御机制，试图用跨界成功经验凌驾于物理法则之上。",
+        "ultimate_outcome": "错失治疗时机，神经内分泌肿瘤发生转移，最终导致器官衰竭死亡。"
+    },
+    {
+        "target_id": "Howard Hughes (Aviation Tycoon / Billionaire)",
+        "archetype": "孤岛暴君 (The Isolated Monarch)",
+        "core_cognitive_bias": "极端财富构建的「医疗真空泡」。认为只要花足够多的钱，就能买断医学常识，让私人医生沦为单纯的「药物提供者」而非「健康守门人」。",
+        "fatal_action": "晚年将自己反锁在酒店房间内与世隔绝，因极度恐慌细菌而拒绝基本卫生护理，同时高薪雇佣私人医生为其无限量提供可待因和安定等处方药。",
+        "trigger_condition": "拥有绝对的财务支配力，社交圈层极度封闭，身边全是在经济上依附于他并随时准备妥协的专业人士。",
+        "ultimate_outcome": "死于肾衰竭和严重营养不良。去世时身高1米91但体重仅有42公斤，需要通过指纹才能确认身份。"
+    },
+    {
+        "target_id": "Nikola Tesla (Visionary Inventor)",
+        "archetype": "赛博修仙党 (The God Complex / Bio-Hacker)",
+        "core_cognitive_bias": "「纯粹智力凌驾于肉体」的极端还原主义。将人体视为可以直接用精神力量对抗疲劳和物理伤害的低级硬件。",
+        "fatal_action": "长期剥夺睡眠（自称每天只睡2小时），并在遭遇严重车祸导致胸部肋骨断裂后，完全拒绝就医和正规治疗，仅靠自我隔离和所谓的「精神能量」恢复。",
+        "trigger_condition": "将极端的自我剥削视为天才的勋章，对传统的医学修复机制嗤之以鼻，过度迷信自身的精神自愈能力。",
+        "ultimate_outcome": "晚年身体机能彻底崩溃，患有严重的强迫症和营养不良，最终在酒店房间内死于冠状动脉血栓形成。"
+    }
+]
