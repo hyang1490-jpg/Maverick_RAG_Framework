@@ -426,7 +426,7 @@
             diagnosisBox.classList.add('border-red-600', 'animate-pulse-surgical');
             diagnosisFooter.textContent = 'Processing_';
 
-            fetch('/api/analyze', {
+            fetch('http://localhost:8000/api/analyze', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ danger_thought: thought }),

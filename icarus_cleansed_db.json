@@ -1,0 +1,442 @@
+[
+  {
+    "company_name": "Dazo",
+    "funding_amount": "$80",
+    "archetype": "Sunk Cost Fallacy",
+    "fatal_action": "Continuing operations despite failing to secure sufficient funding and facing increasing client acquisition costs.",
+    "trigger_condition": "Fierce competition leading to price wars that reduced revenue potential for all players in the market.",
+    "ultimate_outcome": "Dazo's premature demise underscores the futility of clinging to a flawed business model."
+  },
+  {
+    "company_name": "Yik Yak",
+    "funding_amount": "$80",
+    "archetype": "Echo Chamber",
+    "fatal_action": "Failed to implement adequate moderation and oversight for user-generated content, leading to widespread abuse and legal issues.",
+    "trigger_condition": "Arrest of a user for threats made on the platform in September 2014.",
+    "ultimate_outcome": "Yik Yak's unchecked toxic environment led to its swift downfall after attracting significant attention from law enforcement."
+  },
+  {
+    "company_name": "PepperTap",
+    "funding_amount": "$50m",
+    "archetype": "Sunk Cost Fallacy",
+    "fatal_action": "Offering disproportionate discounts and sales to meet customer expectations without considering financial sustainability.",
+    "trigger_condition": "Inadequate preparation for the online grocery business leading to technological issues and inventory management problems.",
+    "ultimate_outcome": "PepperTap drowned in its own discounts, unable to sustain the illusion of competitive pricing."
+  },
+  {
+    "company_name": "Zoomo",
+    "funding_amount": "$80",
+    "archetype": "Cargo Cult",
+    "fatal_action": "Returning raised capital and closing operations prematurely when still half-funded due to misunderstanding market dynamics.",
+    "trigger_condition": "Customer unfamiliarity with online car transaction platforms leading to price comparison issues.",
+    "ultimate_outcome": "Zoomo drowned in its own confusion, returning funds like a cargo cultist revering false idols."
+  },
+  {
+    "company_name": "Quibi",
+    "funding_amount": "$2B",
+    "archetype": "Icarus Syndrome",
+    "fatal_action": "Launching a mobile-only streaming service with short-form content that failed to attract and retain user engagement despite significant investment.",
+    "trigger_condition": "The inability to compete against established streaming giants like Netflix and Hulu, coupled with the lack of unique value proposition for users.",
+    "ultimate_outcome": "Quibi burned through $1.9 billion in less than two years before declaring bankruptcy, leaving investors and employees with nothing."
+  },
+  {
+    "company_name": "Pixate",
+    "funding_amount": "$80",
+    "archetype": "Sunk Cost Fallacy",
+    "fatal_action": "Google shut down Pixate in 2016 to focus on developing Material tools.",
+    "trigger_condition": "Introduction of Google's Material design tools in October 2016",
+    "ultimate_outcome": "Pixate, once a promising startup, was rendered obsolete by its acquirer's strategic pivot."
+  },
+  {
+    "company_name": "Musical.ly",
+    "funding_amount": "$133.5 million",
+    "archetype": "Cargo Cult",
+    "fatal_action": "Failed to innovate and differentiate from competitors despite user base and popularity",
+    "trigger_condition": "Acquisition by ByteDance and integration into TikTok",
+    "ultimate_outcome": "Consumed by a more successful competitor, leaving no trace of its former glory"
+  },
+  {
+    "company_name": "Justin.tv",
+    "funding_amount": "$80",
+    "archetype": "Cargo Cult",
+    "fatal_action": "Failing to pivot and adapt when Twitch emerged as a dominant competitor in the video game streaming niche",
+    "trigger_condition": "The emergence of Twitch as a specialized platform for gaming live streams, which attracted Justin.tv's user base away",
+    "ultimate_outcome": "Justin.tv was overtaken by its more focused competitor, leaving it obsolete and shutting down"
+  },
+  {
+    "company_name": "Toys R Us",
+    "funding_amount": "$6.6 billion",
+    "archetype": "Sunk Cost Fallacy",
+    "fatal_action": "Continued investment in brick-and-mortar stores despite declining sales and increasing debt",
+    "trigger_condition": "Market competition from big-box retailers like Walmart and Target",
+    "ultimate_outcome": "Toys R Us liquidated its assets, closed all stores, and declared bankruptcy"
+  },
+  {
+    "company_name": "Houseparty",
+    "funding_amount": "$52 million",
+    "archetype": "Sunk Cost Fallacy",
+    "fatal_action": "Continuing to invest in a social media platform that failed to establish long-term user engagement beyond the pandemic period.",
+    "trigger_condition": "The end of widespread remote work and social distancing measures leading to decreased usage.",
+    "ultimate_outcome": "Houseparty's premature celebration of fleeting success led to its swift demise when the novelty wore off."
+  },
+  {
+    "company_name": "Xinja",
+    "funding_amount": "$150M",
+    "archetype": "Cargo Cult",
+    "fatal_action": "Xinja froze customer accounts and returned deposits, leading to the loss of trust and liquidity crisis.",
+    "trigger_condition": "The inability to secure additional funding in a challenging capital-raising environment.",
+    "ultimate_outcome": "Xinja's ambitious neobank venture ended as a cautionary tale of unsustainable business models."
+  },
+  {
+    "company_name": "Quirky",
+    "funding_amount": "$180M",
+    "archetype": "Cargo Cult",
+    "fatal_action": "Relying on user-generated content without proper expertise to vet and scale products",
+    "trigger_condition": "Lack of clear product-market fit leading to unsustainable business model",
+    "ultimate_outcome": "Quirky's platform drowned in a sea of unviable ideas, despite massive funding"
+  },
+  {
+    "company_name": "Atrium",
+    "funding_amount": "$75M",
+    "archetype": "Icarus Syndrome",
+    "fatal_action": "Failed to develop a product-market fit despite substantial funding and experienced founding team",
+    "trigger_condition": "Inability to adapt offering to market needs within 36 months of operation",
+    "ultimate_outcome": "Atrium burned through $75M only to realize it had no viable product for the market"
+  },
+  {
+    "company_name": "Glitch",
+    "funding_amount": "$12.2M",
+    "archetype": "Icarus Syndrome",
+    "fatal_action": "Reverting Glitch to beta status in 2011 to work on core improvements instead of focusing on immediate user retention and engagement.",
+    "trigger_condition": "The team's overconfidence in their ability to iterate and improve the game led to neglecting current user base and market demands, causing a decline in active users.",
+    "ultimate_outcome": "Glitch crashed into the sea of obscurity, drowning under its own weight of potential that never materialized."
+  },
+  {
+    "company_name": "Yogome",
+    "funding_amount": "$36.5M",
+    "archetype": "Sunk Cost Fallacy",
+    "fatal_action": "Continuing to invest heavily in a gamification app despite lack of market traction and changing educational dynamics post-COVID-19",
+    "trigger_condition": "The shift from physical to online education due to the pandemic, which Yogome failed to adapt to effectively",
+    "ultimate_outcome": "Yogome's substantial investment in an outdated model led to its collapse as it could not pivot with market changes"
+  },
+  {
+    "company_name": "Tink Labs",
+    "funding_amount": "$160M",
+    "archetype": "Icarus Syndrome",
+    "fatal_action": "Tink Labs invested heavily in an unproven business model of supplying hotel chains with smartphones, ignoring market feedback and investor concerns.",
+    "trigger_condition": "The company's failure to adapt its business model despite significant financial backing and mounting losses led to a critical point where investors lost confidence and funding dried up.",
+    "ultimate_outcome": "Tink Labs, once hailed as Hong Kong's first unicorn, ended in bankruptcy with $160M of investor money wasted on an unsustainable venture."
+  },
+  {
+    "company_name": "Daqri",
+    "funding_amount": "$73 million",
+    "archetype": "Cargo Cult",
+    "fatal_action": "Continuing to raise funds based on a vision without achieving significant product-market fit or revenue generation.",
+    "trigger_condition": "Running out of cash despite raising $275 million, indicating an inability to convert funding into sustainable business operations.",
+    "ultimate_outcome": "Daqri sold its assets for pennies on the dollar,沦为大公司收购的廉价资产。"
+  },
+  {
+    "company_name": "Katerra",
+    "funding_amount": "$1.6B",
+    "archetype": "Icarus Syndrome",
+    "fatal_action": "Over-spending without generating any returns on investments and expanding too rapidly without a clear path to profitability.",
+    "trigger_condition": "The collapse of Greensill Capital, which led to the cancellation of $435M debt owed to it by Katerra, triggering financial instability.",
+    "ultimate_outcome": "Katerra's ambitious vision crashed into reality, leaving behind a trail of unfulfilled promises and financial ruin."
+  },
+  {
+    "company_name": "HubHaus",
+    "funding_amount": "$13.4M",
+    "archetype": "Sunk Cost Fallacy",
+    "fatal_action": "Continuing to invest in a co-living startup despite fundamental changes in market conditions due to the pandemic.",
+    "trigger_condition": "The prolonged and unpredictable nature of lockdowns during the pandemic, which fundamentally altered the product-market fit for co-living services.",
+    "ultimate_outcome": "HubHaus succumbed to the relentless economic pressures of an industry upended by unforeseen global events."
+  },
+  {
+    "company_name": "ScaleFactor",
+    "funding_amount": "$103M",
+    "archetype": "Cargo Cult",
+    "fatal_action": "Failed to deliver promised automation and sub-par bookkeeping services despite raising $103M in funding.",
+    "trigger_condition": "Revelation of non-existent automation and poor service quality by former customers and employees.",
+    "ultimate_outcome": "ScaleFactor burned through millions, leaving behind a trail of unfulfilled promises and disillusioned stakeholders."
+  },
+  {
+    "company_name": "Desti",
+    "funding_amount": "$80",
+    "archetype": "Survivorship Bias",
+    "fatal_action": "Failed to secure Series A funding due to inability to generate revenue and attract significant user trust compared to established competitors.",
+    "trigger_condition": "Market saturation by well-established travel service providers like TripAdvisor and Lonely Planet, coupled with users' preference for trusted brands over innovative startups.",
+    "ultimate_outcome": "Desti's revolutionary technology was ultimately acquired by Nokia, but the company itself ceased to exist as an independent entity."
+  },
+  {
+    "company_name": "HotelsAroundYou",
+    "funding_amount": "$80",
+    "archetype": "Echo Chamber",
+    "fatal_action": "Failed to secure additional funding due to inability to differentiate from established competitors",
+    "trigger_condition": "Exhaustion of initial seed capital without achieving market traction or user acquisition targets",
+    "ultimate_outcome": "HotelsAroundYou quietly faded into oblivion, a forgotten footnote in the annals of failed startups"
+  },
+  {
+    "company_name": "HiGear",
+    "funding_amount": "$80",
+    "archetype": "Cargo Cult",
+    "fatal_action": "Shutting down operations after a $400,000 car theft incident due to perceived security flaws.",
+    "trigger_condition": "Theft of high-value vehicles using stolen identities that bypassed background checks.",
+    "ultimate_outcome": "HiGear's overreaction to a single security breach led to its demise, only to be acquired by a competitor."
+  },
+  {
+    "company_name": "Zirtual",
+    "funding_amount": "$80",
+    "archetype": "Icarus Syndrome",
+    "fatal_action": "Scaling too quickly by hiring 500 employees before reaching sustainable growth",
+    "trigger_condition": "Failure to secure a round of funding when needed",
+    "ultimate_outcome": "Zirtual burned through its funds and collapsed, leaving behind only the irony of another startup offering to buy it out"
+  },
+  {
+    "company_name": "RoomsTonite",
+    "funding_amount": "$1.5M",
+    "archetype": "Sunk Cost Fallacy",
+    "fatal_action": "Continuing operations despite delayed or insufficient funding",
+    "trigger_condition": "Delayed arrival of announced $1.5 million in funding",
+    "ultimate_outcome": "RoomsTonite vanished, leaving only a memory of an app that never fully materialized"
+  },
+  {
+    "company_name": "Secret",
+    "funding_amount": "$35M",
+    "archetype": "Echo Chamber",
+    "fatal_action": "Failing to address the rampant cyberbullying and harassment on the platform despite user complaints and media coverage.",
+    "trigger_condition": "A court ruling in Brazil banning Secret due to constitutional concerns over anonymous speech leading to harassment.",
+    "ultimate_outcome": "Secret, once a promising social media startup with $35M in funding, succumbed to its own echo chamber of negativity and was ultimately banned and shut down."
+  },
+  {
+    "company_name": "Rafter",
+    "funding_amount": "$80",
+    "archetype": "Cargo Cult",
+    "fatal_action": "Rafter failed to adapt its business model in response to technological changes that allowed direct online transactions between universities and publishers.",
+    "trigger_condition": "The widespread adoption of digital platforms by educational institutions, which eliminated the need for intermediary services like Rafter's.",
+    "ultimate_outcome": "Rafter was left obsolete as technology rendered its service unnecessary."
+  },
+  {
+    "company_name": "Netscape",
+    "funding_amount": "$80",
+    "archetype": "Cargo Cult",
+    "fatal_action": "Failed to innovate and improve their product as rapidly as Microsoft did with Internet Explorer.",
+    "trigger_condition": "Release of Microsoft's Internet Explorer 1.0",
+    "ultimate_outcome": "Netscape, once the cornerstone of internet navigation, was overtaken by a competitor who offered a superior product."
+  },
+  {
+    "company_name": "Sharingear",
+    "funding_amount": "$80",
+    "archetype": "God Complex",
+    "fatal_action": "Focusing on a niche market with a flawed business model that could not sustain operations costs.",
+    "trigger_condition": "Lack of product-market fit and musicians' reluctance to use the service due to economic constraints.",
+    "ultimate_outcome": "Sharingear drowned in its own echo chamber, instruments unsold and dreams unplayed."
+  },
+  {
+    "company_name": "Zulily",
+    "funding_amount": "$80",
+    "archetype": "Echo Chamber",
+    "fatal_action": "Implementing a restrictive email sign-up requirement for new visitors that violated basic marketing principles and led to declining sales.",
+    "trigger_condition": "Significant financial issues leading to the inability to meet creditor demands, forcing liquidation of assets.",
+    "ultimate_outcome": "Zulily's aggressive but ineffective marketing strategy and subsequent financial mismanagement culminated in its complete collapse, leaving creditors satisfied at the expense of employees and customers."
+  },
+  {
+    "company_name": "EventVue",
+    "funding_amount": "$80",
+    "archetype": "God Complex",
+    "fatal_action": "Failed to validate product-market fit with target customers early on and continued development without user feedback.",
+    "trigger_condition": "Realization by conference organizers that the platform was not addressing their primary need of selling more tickets, leading to lack of interest in paying for it.",
+    "ultimate_outcome": "EventVue shut down in February 2010, leaving behind a product no one wanted to pay for."
+  },
+  {
+    "company_name": "Totsy",
+    "funding_amount": "$80",
+    "archetype": "Sunk Cost Fallacy",
+    "fatal_action": "Continuing to invest in a failing business model despite changing market conditions.",
+    "trigger_condition": "Economic recovery and the return of luxury brands' full-price sales.",
+    "ultimate_outcome": "Totsy's stubborn persistence led to its inevitable bankruptcy."
+  },
+  {
+    "company_name": "Skully",
+    "funding_amount": "$80",
+    "archetype": "Sunk Cost Fallacy",
+    "fatal_action": "Failed to secure additional funding for production despite limited funds and high pre-order demand.",
+    "trigger_condition": "Inability to raise further investment rounds in 2016.",
+    "ultimate_outcome": "Skully's assets were acquired by a new entity with no obligation to original clients, leaving customers without their promised product or refunds."
+  },
+  {
+    "company_name": "Verelo",
+    "funding_amount": "$80",
+    "archetype": "Sunk Cost Fallacy",
+    "fatal_action": "Failed to secure additional funding despite inadequate initial capital.",
+    "trigger_condition": "Stiff competition and inability to differentiate from other analytics firms.",
+    "ultimate_outcome": "Verelo shuttered after six months, a mere blip in the digital landscape."
+  },
+  {
+    "company_name": "Wantful",
+    "funding_amount": "$80",
+    "archetype": "Icarus Syndrome",
+    "fatal_action": "Failed to secure additional investment after shifting business model and facing stiff competition from established e-commerce platforms.",
+    "trigger_condition": "Inability to meet venture capital expectations for growth, leading to loss of potential strategic partner Nordstrom's investment.",
+    "ultimate_outcome": "Wantful crashed into the sea of competition, drowning in its own inability to secure further funding."
+  },
+  {
+    "company_name": "Gowalla",
+    "funding_amount": "$80",
+    "archetype": "Echo Chamber",
+    "fatal_action": "Failed to pivot and adapt when Foursquare gained significant market traction.",
+    "trigger_condition": "Foursquare's rapid growth and acquisition of a large user base in early 2010s.",
+    "ultimate_outcome": "Gowalla shut down in 2012, leaving behind a legacy of missed opportunities and unfulfilled potential."
+  },
+  {
+    "company_name": "PostRocket",
+    "funding_amount": "$80",
+    "archetype": "Icarus Syndrome",
+    "fatal_action": "Failing to adapt product and strategy in response to rapid changes in the Facebook marketing landscape.",
+    "trigger_condition": "Facebook launching its own Insights service for free, directly competing with PostRocket's core offering.",
+    "ultimate_outcome": "PostRocket plummeted from grace as users flocked to Facebook's complimentary analytics tool."
+  },
+  {
+    "company_name": "Wesabe",
+    "funding_amount": "$80",
+    "archetype": "Dunning-Kruger",
+    "fatal_action": "Deciding to build their own data acquisition system instead of partnering with an established provider like Yodlee, despite lacking the necessary expertise.",
+    "trigger_condition": "Mint's successful launch with a fully functional data aggregation system provided by Yodlee, highlighting Wesabe's inferior product.",
+    "ultimate_outcome": "Wesabe was outmaneuvered and ultimately rendered obsolete by Mint due to their underdeveloped data acquisition technology."
+  },
+  {
+    "company_name": "99dresses",
+    "funding_amount": "$80",
+    "archetype": "Dunning-Kruger",
+    "fatal_action": "Failed to raise sufficient revenue and failed to implement necessary innovations.",
+    "trigger_condition": "Diminishing exchange costs leading to a drop in income.",
+    "ultimate_outcome": "99dresses collapsed, leaving behind an empty virtual closet."
+  },
+  {
+    "company_name": "Lookery",
+    "funding_amount": "$80",
+    "archetype": "Cargo Cult",
+    "fatal_action": "Failed to pivot away from reliance on Facebook when it made a platform redesign in 2008.",
+    "trigger_condition": "Facebook's platform redesign in 2008 rendered Lookery's services obsolete.",
+    "ultimate_outcome": "Lookery was acquired by Adknowledge, a far cry from its ambitions."
+  },
+  {
+    "company_name": "Argyle Social",
+    "funding_amount": "$80",
+    "archetype": "Icarus Syndrome",
+    "fatal_action": "Expanded integration features beyond core product capabilities without securing additional funding or market validation.",
+    "trigger_condition": "Key competitor HubSpot acquired a similar platform, crowding out Argyle's unique value proposition and causing customer churn.",
+    "ultimate_outcome": "Argyle Social plummeted from social media marketing darling to ghostly relic in less than two years."
+  },
+  {
+    "company_name": "Karhoo",
+    "funding_amount": "$80",
+    "archetype": "Cargo Cult",
+    "fatal_action": "Offering unlimited free rides due to a bug in the app's code expiration system.",
+    "trigger_condition": "Marketing campaign with flawed promotional tactics leading to unsustainable financial losses.",
+    "ultimate_outcome": "Karhoo burned through its funding, drowning in a sea of unpaid free rides."
+  },
+  {
+    "company_name": "ArsDigita",
+    "funding_amount": "$80",
+    "archetype": "Cargo Cult",
+    "fatal_action": "Overreliance on an open-source model without sustainable revenue streams",
+    "trigger_condition": "Market shift towards proprietary software solutions and increased competition",
+    "ultimate_outcome": "ArsDigita's grand vision of revolutionizing e-commerce crumbled into obscurity, leaving behind only the echoes of its once promising foundation"
+  },
+  {
+    "company_name": "PoliMobile",
+    "funding_amount": "$80",
+    "archetype": "Sunk Cost Fallacy",
+    "fatal_action": "Continuing to invest in a product without securing paying customers or validating market demand",
+    "trigger_condition": "Realization that target market was not ready for the technology despite functioning well",
+    "ultimate_outcome": "PoliMobile crashed into oblivion, its political ambitions buried under the weight of unmet expectations"
+  },
+  {
+    "company_name": "Tilt",
+    "funding_amount": "$80",
+    "archetype": "God Complex",
+    "fatal_action": "CEO's excessive spending and lifestyle perks for employees while neglecting sustainable business growth",
+    "trigger_condition": "Exhaustion of investor funds leading to inability to maintain operations",
+    "ultimate_outcome": "Tilt, once valued at $375 million, was sold off to Airbnb for a fraction of its former worth"
+  },
+  {
+    "company_name": "Delicious",
+    "funding_amount": "$80",
+    "archetype": "Sunk Cost Fallacy",
+    "fatal_action": "Dragging on the development of the new site version for two years after acquisition by Yahoo!",
+    "trigger_condition": "The emergence and dominance of competitors like Pinterest, Trello, Evernote, Pinboard, and Pocket in the social bookmarking sector",
+    "ultimate_outcome": "Delicious was buried under its own technical debt and overshadowed by more agile competitors"
+  },
+  {
+    "company_name": "Move Loot",
+    "funding_amount": "$80",
+    "archetype": "Icarus Syndrome",
+    "fatal_action": "Aggressively scaling up operations in New York and Los Angeles without proper financial planning or evaluation of past models' success.",
+    "trigger_condition": "Mass layoffs due to a lopsided cost-income condition leading to unsustainable expenses.",
+    "ultimate_outcome": "Move Loot crashed into the ground, its wings melted by the heat of ambition."
+  },
+  {
+    "company_name": "QBotix",
+    "funding_amount": "$80",
+    "archetype": "Cargo Cult",
+    "fatal_action": "QBotix attempted to license their product and software to other companies when direct market adoption failed, but this strategy was unsuccessful.",
+    "trigger_condition": "The rapid improvement in competitor technology made QBotix's two-axis tracker less cost-effective compared to single-axis trackers, leading investors to reduce funding.",
+    "ultimate_outcome": "QBotix shut down operations and laid off staff after failing to secure additional funding or successfully license their product."
+  },
+  {
+    "company_name": "Fuhu",
+    "funding_amount": "$80",
+    "archetype": "Icarus Syndrome",
+    "fatal_action": "Continued borrowing millions of dollars in hopes of replicating past success without proper financial management or cost control measures.",
+    "trigger_condition": "Foxconn demanded restriction of operational costs, but Fuhu failed to act on it leading to a critical debt accumulation and eventual bankruptcy.",
+    "ultimate_outcome": "Fuhu plummeted from the pinnacle of Inc 500 rankings into bankruptcy due to reckless financial practices."
+  },
+  {
+    "company_name": "SellanApp",
+    "funding_amount": "$80",
+    "archetype": "Groupthink",
+    "fatal_action": "Failed to address partnership issues and maintain transparency in business operations.",
+    "trigger_condition": "Loss of focus and inability to pivot despite raising seed investments.",
+    "ultimate_outcome": "SellanApp, the platform that promised to bring app ideas to life, crumbled under its own mismanagement."
+  },
+  {
+    "company_name": "Formspring",
+    "funding_amount": "$80",
+    "archetype": "Cargo Cult",
+    "fatal_action": "Collaborating with MIT Lab instead of immediately limiting anonymity feature in response to cyberbullying issues.",
+    "trigger_condition": "Association of several teen suicides with cyberbullying on the platform leading to loss of user base and growth freeze.",
+    "ultimate_outcome": "Formspring collapsed under the weight of its own anonymity, becoming a cautionary tale for social media startups."
+  },
+  {
+    "company_name": "Reach.ly",
+    "funding_amount": "$80",
+    "archetype": "Cargo Cult",
+    "fatal_action": "Continued operation with mixed ideas and models from previous business without scaling down or seeking new investors.",
+    "trigger_condition": "Lack of market feedback and spending too much on technology without a working prototype or customer base.",
+    "ultimate_outcome": "Reach.ly collapsed under the weight of its own technological hubris, leaving behind nothing but abandoned code."
+  },
+  {
+    "company_name": "FoundationDB",
+    "funding_amount": "$80",
+    "archetype": "Cargo Cult",
+    "fatal_action": "FoundationDB was acquired by Apple and subsequently removed its downloadable software from the website, rendering its open source components unavailable to the public.",
+    "trigger_condition": "Apple's acquisition of FoundationDB in 2015 led to the removal of all accessible software and tools that were critical for developers using FoundationDB.",
+    "ultimate_outcome": "FoundationDB became a relic of its former glory, stripped of its utility and left as an open-source ghost town."
+  },
+  {
+    "company_name": "Stayzilla",
+    "funding_amount": "$33.5M",
+    "archetype": "Icarus Syndrome",
+    "fatal_action": "Persisting with high-cost operations and failing to adapt pricing strategies in response to market competition.",
+    "trigger_condition": "Entry of numerous competitors offering frequent discounts, exacerbating Stayzilla's financial strain due to already high operational costs.",
+    "ultimate_outcome": "Stayzilla plummeted from its pioneering status into obscurity, becoming a cautionary tale for overambitious startups."
+  },
+  {
+    "company_name": "Auctionata",
+    "funding_amount": "$80",
+    "archetype": "God Complex",
+    "fatal_action": "The CEO and his close partners engaged in unethical behavior, lack of transparency, and outright lies about company performance.",
+    "trigger_condition": "An independent auditing company discovered the fraudulent practices and reported them publicly.",
+    "ultimate_outcome": "Auctionata collapsed under the weight of its own deceit."
+  }
+]

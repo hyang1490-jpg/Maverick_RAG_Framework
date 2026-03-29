@@ -21,44 +21,53 @@ The entire pipeline runs locally (optimized for RTX 5080 16GB VRAM), ensuring ze
 [User Input: High-Risk Thought Process] 
        │
        ▼ (REST API / FastAPI)
-[Embedding Layer: bge-large-zh-v1.5] ──▶ Vectorization
+[Embedding Layer: nomic-embed-text (Ollama)] ──▶ Vectorization
        │
        ▼
-[Retrieval Layer: ChromaDB] ───────────▶ Semantic Search (Top-K Matching)
+[Retrieval Layer: ChromaDB] ────────────────────▶ Semantic Search (Top-K Matching)
        │
        ▼ (Constructs Context-Aware Prompt)
-[Generation Layer: Ollama + Qwen2.5] ──▶ Local LLM Inference
+[Generation Layer: Ollama + Qwen2.5:14b] ──────▶ Local LLM Inference
        │
        ▼ (JSON Response)
-[Frontend UI: HTML/JS + Tailwind] ─────▶ Threat Rating & Streaming Output
+[FastAPI Middleware (api_server.py)] ───────────▶ REST API Gateway (Port 8000)
+       │
+       ▼
+[Frontend UI: HTML/JS + Tailwind] ─────────────▶ Threat Rating & Streaming Output
 ```
 
 ## 🛠 Tech Stack
 
 * **Backend:** Python, FastAPI, Uvicorn
-* **Vector Database:** ChromaDB (Local SQLite)
-* **Embeddings:** `SentenceTransformer` (`bge-large-zh-v1.5`)
+* **API Gateway:** FastAPI 中间层 (`api_server.py`, Port 8000)
+* **Vector Database:** ChromaDB (Local Persistent Storage)
+* **Embeddings:** `nomic-embed-text` via Ollama (本地推理)
 * **LLM Inference:** Ollama running `qwen2.5:14b`
 * **Frontend:** Vanilla JavaScript, HTML5, Tailwind CSS (via CDN)
 
 ## 🚀 How to Run Locally
 
-1. **Prerequisites:** * Install Python 3.10+
-   * Install [Ollama](https://ollama.com/) and pull the model: `ollama run qwen2.5:14b`
+1. **Prerequisites:**
+   * Install Python 3.10+
+   * Install [Ollama](https://ollama.com/) and pull the models:
+     ```bash
+     ollama pull qwen2.5:14b
+     ollama pull nomic-embed-text
+     ```
 
 2. **Install Dependencies:**
    ```bash
-   pip install fastapi uvicorn chromadb sentence-transformers
+   pip install fastapi uvicorn chromadb ollama tqdm
    ```
 
 3. **Initialize the Vector Database:**
    ```bash
-   python icarus_core.py
+   python ingest_v2.py
    ```
 
 4. **Start the Server:**
    ```bash
-   uvicorn main:app --host 0.0.0.0 --port 8080
+   python api_server.py
    ```
 
-5. **Access the UI:** Open `http://localhost:8080` in your browser.
+5. **Access the UI:** Open `index.html` in your browser (API runs on `http://localhost:8000`).

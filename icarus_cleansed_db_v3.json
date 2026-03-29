@@ -1,0 +1,387 @@
+[
+  {
+    "company_name": "Dazo",
+    "industry": "食品科技",
+    "failure_reasons": "由于资金不足和激烈的市场竞争，Dazo难以维持运营并在成立一年内决定关闭业务。",
+    "funding_amount": "$1.8M",
+    "archetype": "Sunk Cost Fallacy"
+  },
+  {
+    "company_name": "Yik Yak",
+    "industry": "社交网络",
+    "failure_reasons": "Yik Yak是一款基于地理位置的匿名社交媒体应用，在2013和2014年在美国学校和大学校园中非常流行，但在达到180万下载量后不久便衰落了。",
+    "funding_amount": "$73.5M",
+    "archetype": "Echo Chamber"
+  },
+  {
+    "company_name": "PepperTap",
+    "industry": "在线零售",
+    "failure_reasons": "PepperTap在扩张时未能充分考虑项目的可扩展性，并且在技术准备不足的情况下进入在线杂货业务，导致部分产品功能故障和库存管理问题。此外，公司为了迎合客户期望提供了不切实际的折扣，加剧了财务压力。",
+    "funding_amount": "$51.2M",
+    "archetype": "Sunk Cost Fallacy"
+  },
+  {
+    "company_name": "Zoomo",
+    "industry": "汽车交易市场平台",
+    "failure_reasons": "Zoomo因印度二手车市场的不成熟而失败，许多首次参与汽车交易的买家和卖家对市场价格缺乏了解，导致用户流失。",
+    "funding_amount": "$7M",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "Quibi",
+    "industry": "在线视频",
+    "failure_reasons": "尽管拥有近20亿美元的现金储备和一支经验丰富的团队，Quibi仍未能成功。其主要问题在于市场对短小精悍、适合移动设备观看的内容需求不如预期强烈。",
+    "funding_amount": "$1.75B",
+    "archetype": "Icarus Syndrome"
+  },
+  {
+    "company_name": "Pixate",
+    "industry": "企业SaaS",
+    "failure_reasons": "Pixate在几年内迅速流行并被谷歌收购后，在2016年宣布关闭以专注于新的与原型设计相关的工具。",
+    "funding_amount": "$3.8M",
+    "archetype": "Sunk Cost Fallacy"
+  },
+  {
+    "company_name": "Musical.ly",
+    "industry": "社交网络",
+    "failure_reasons": "尽管Musical.ly在2014年至2017年间积累了超过2亿用户，并且每天有数百万的视频上传，但最终因被TikTok收购而关闭。",
+    "funding_amount": "$16.4M",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "Justin.tv",
+    "industry": "直播平台",
+    "failure_reasons": "Justin.tv成立于2007年，是一家提供各类现场直播服务的平台，在运营七年后于2014年关闭。尽管存在一些问题和争议，但这些问题并非直接导致其关闭的原因。",
+    "funding_amount": "$8M",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "Toys R Us",
+    "industry": "玩具零售",
+    "failure_reasons": "Toys R Us在1990年代末期面临来自沃尔玛、Kmart等大卖场的激烈竞争，导致销售额下滑并积累了巨额债务。尽管与亚马逊的合作初期成功，但未能扭转其财务困境。",
+    "funding_amount": "未公开",
+    "archetype": "Sunk Cost Fallacy"
+  },
+  {
+    "company_name": "Houseparty",
+    "industry": "社交网络",
+    "failure_reasons": "Houseparty是一款在新冠疫情期间流行的视频聊天应用，但由于其成功时间短暂，在2021年10月关闭了服务。",
+    "funding_amount": "$70M",
+    "archetype": "Sunk Cost Fallacy"
+  },
+  {
+    "company_name": "Xinja",
+    "industry": "金融科技",
+    "failure_reasons": "Xinja于2020年12月退出了新兴银行领域，退还了银行业务许可证，并冻结了客户的账户及归还所有存款。尽管公司将失败主要归咎于新冠疫情和融资环境恶化，但其竞争对手如Up Bank和Volt在疫情期间仍保持增长并推出新产品，因此疫情可能不是唯一原因。",
+    "funding_amount": "$71M",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "Quirky",
+    "industry": "智能硬件",
+    "failure_reasons": "尽管Quirky拥有雄心勃勃的创始人、庞大的用户基础和知名投资者的支持，但最终未能克服其商业模式中的核心挑战，导致了公司的失败。",
+    "funding_amount": "$185M",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "Atrium",
+    "industry": "金融科技",
+    "failure_reasons": "尽管Atrium获得了7500万美元的融资，并且由具有丰富创业经验的成功团队创立，但该公司在三年内倒闭。其失败的具体原因尚不明确，但从案例中可以看出高资金和强背景并不能保证成功。",
+    "funding_amount": "$75.5M",
+    "archetype": "Icarus Syndrome"
+  },
+  {
+    "company_name": "Glitch",
+    "industry": "企业SaaS",
+    "failure_reasons": "Glitch作为在线游戏项目失败了，但其团队后来开发的Slack成为了一款成功的内部沟通工具，并被Salesforce以277亿美元收购。",
+    "funding_amount": "未公开",
+    "archetype": "Icarus Syndrome"
+  },
+  {
+    "company_name": "Yogome",
+    "industry": "在线教育",
+    "failure_reasons": "新冠疫情导致全球教育系统发生剧变，迫使学生居家学习，从而推动了EdTech市场的快速增长和广泛应用。然而，这种增长可能是短暂的，一旦疫情结束，市场需求可能会发生变化。",
+    "funding_amount": "$36M",
+    "archetype": "Sunk Cost Fallacy"
+  },
+  {
+    "company_name": "Tink Labs",
+    "industry": "智能硬件",
+    "failure_reasons": "尽管Tink Labs获得了2亿美元的投资，但最终还是破产了。其业务模式是向酒店连锁供应智能手机，然而这一策略未能成功实现盈利和可持续发展。",
+    "funding_amount": "$160M",
+    "archetype": "Icarus Syndrome"
+  },
+  {
+    "company_name": "Daqri",
+    "industry": "增强现实",
+    "failure_reasons": "尽管筹集了2.75亿美元资金，但由于缺乏持续的资金流，Daqri在2019年停止运营并出售了其资产。",
+    "funding_amount": "$275M",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "Katerra",
+    "industry": "建筑科技",
+    "failure_reasons": "Katerra在短时间内经历了频繁的管理层变动、大规模裁员和工厂关闭等问题，并且过于强调增长而忽视了盈利路径。公司试图涉足过多领域，缺乏聚焦，导致过度支出而未能获得相应的回报。",
+    "funding_amount": "$2.2B",
+    "archetype": "Icarus Syndrome"
+  },
+  {
+    "company_name": "HubHaus",
+    "industry": "共享居住",
+    "failure_reasons": "该公司因疫情导致的长期封锁和市场需求变化而遭受重创，尽管管理团队可能受到指责，但缺乏资金支持是其无法生存的主要原因。",
+    "funding_amount": "$11M",
+    "archetype": "Sunk Cost Fallacy"
+  },
+  {
+    "company_name": "ScaleFactor",
+    "industry": "金融科技",
+    "failure_reasons": "ScaleFactor承诺通过自动化记账革新中小企业会计服务，但未能实现其愿景。公司提供的基本记账服务也表现不佳，最终因无法兑现承诺而关闭。",
+    "funding_amount": "$104M",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "Desti",
+    "industry": "旅游服务",
+    "failure_reasons": "尽管用户认为Desti的应用程序有用并欣赏其位置建议功能，但他们最终还是选择在更受信任的平台或知名品牌上完成预订。由于未能从其服务中产生收入，导致A轮融资资金不足，并且该公司在一个已有TripAdvisor和Lonely Planet等巨头竞争的市场中难以立足。",
+    "funding_amount": "$2M",
+    "archetype": "Survivorship Bias"
+  },
+  {
+    "company_name": "HotelsAroundYou",
+    "industry": "在线旅游",
+    "failure_reasons": "面对经验丰富且用户信任度高的竞争对手，HotelsAroundYou未能获得额外融资，在创始人离职后悄然关闭。",
+    "funding_amount": "未公开",
+    "archetype": "Echo Chamber"
+  },
+  {
+    "company_name": "HiGear",
+    "industry": "汽车租赁",
+    "failure_reasons": "HiGear因犯罪团伙利用被盗身份信息绕过公司背景审查控制而遭受重大财产损失，导致其被迫关闭业务。公司在邮件中向客户声明将采取适当措施以保护客户安全，并在2012年被Rent4Buy收购。",
+    "funding_amount": "$1.3M",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "Zirtual",
+    "industry": "企业SaaS",
+    "failure_reasons": "Zirtual因管理不善和过高的烧钱率导致濒临破产；公司规模扩张过快，在成立不到五年的时间内雇佣了500名员工，最终由于资金轮次未如期到账而突然关闭。",
+    "funding_amount": "$5.5M",
+    "archetype": "Icarus Syndrome"
+  },
+  {
+    "company_name": "RoomsTonite",
+    "industry": "在线旅游",
+    "failure_reasons": "该公司宣布获得150万美元融资，但资金可能延迟到账或未按计划使用，导致公司难以维持运营。两个版本的应用程序都被下架了。",
+    "funding_amount": "$1.5M",
+    "archetype": "Sunk Cost Fallacy"
+  },
+  {
+    "company_name": "Secret",
+    "industry": "社交网络",
+    "failure_reasons": "由于匿名环境下的网络欺凌和不当行为泛滥，用户活跃度迅速下降，加之巴西法院裁定其服务违宪并禁止使用，该应用最终失去市场牵引力而被暂停。",
+    "funding_amount": "$35M",
+    "archetype": "Echo Chamber"
+  },
+  {
+    "company_name": "Rafter",
+    "industry": "在线教育",
+    "failure_reasons": "Rafter面临来自多方面的挑战，包括难以说服大型机构采用其单一来源的文本和笔记服务模式，以及技术进步导致大学可以直接与出版商进行线上交易，减少了对中间代理的需求。",
+    "funding_amount": "$58M",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "Netscape",
+    "industry": "互联网浏览器",
+    "failure_reasons": "尽管Netscape Navigator在1995年推出时极具创新性且没有直接竞争对手，但微软随后推出了Internet Explorer并不断改进，最终凭借更优质的产品超越了Netscape。",
+    "funding_amount": "未公开",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "Sharingear",
+    "industry": "音乐共享平台",
+    "failure_reasons": "公司失败的主要原因是市场过小且商业模式不可持续，交易佣金不足以覆盖运营成本；产品与市场需求不匹配，导致用户选择更经济而非更方便的方案。",
+    "funding_amount": "未公开",
+    "archetype": "God Complex"
+  },
+  {
+    "company_name": "Zulily",
+    "industry": "在线零售",
+    "failure_reasons": "Zulily因营销策略不当和用户关注度低导致人气下降，并且由于严重的财务问题最终被清算以满足债权人的要求。",
+    "funding_amount": "$138M",
+    "archetype": "Echo Chamber"
+  },
+  {
+    "company_name": "EventVue",
+    "industry": "企业SaaS",
+    "failure_reasons": "EventVue因缺乏产品市场契合度而倒闭，其平台虽被视作有益但非必需，未能解决会议组织者的核心需求——增加门票销售。",
+    "funding_amount": "$400K",
+    "archetype": "God Complex"
+  },
+  {
+    "company_name": "Totsy",
+    "industry": "在线零售",
+    "failure_reasons": "该公司因未能适应经济复苏后市场环境的变化而失败，当消费者购买力恢复时，其依赖的闪购模式销售量下降。同时，高端品牌重新崛起，导致市场竞争加剧。",
+    "funding_amount": "$34M",
+    "archetype": "Sunk Cost Fallacy"
+  },
+  {
+    "company_name": "Skully",
+    "industry": "智能硬件",
+    "failure_reasons": "由于资金有限，Skully无法完成价值2000美元的预购头盔的生产，导致约3000名客户期待的产品未能交付。该公司于2016年申请破产，但其产品和资产在2017年由自称无关联的新公司SKULLY Technologies收购。",
+    "funding_amount": "$14.5M",
+    "archetype": "Sunk Cost Fallacy"
+  },
+  {
+    "company_name": "Verelo",
+    "industry": "云计算基础设施",
+    "failure_reasons": "Verelo由于资金不足和缺乏市场牵引力，在运营仅六个月后宣布关闭，并于2013年被Dyn收购。",
+    "funding_amount": "未公开",
+    "archetype": "Sunk Cost Fallacy"
+  },
+  {
+    "company_name": "Wantful",
+    "industry": "电子商务",
+    "failure_reasons": "由于面临Wanelo、Wish等成熟平台的激烈竞争，以及未能达到风险投资期望的增长曲线，Wantful在2013年9月因资金链断裂而关闭。",
+    "funding_amount": "$5.5M",
+    "archetype": "Icarus Syndrome"
+  },
+  {
+    "company_name": "Gowalla",
+    "industry": "社交网络",
+    "failure_reasons": " Gowalla作为位置服务类应用，在2012年因用户规模远不及竞争对手Foursquare而关闭，尽管其拥有60万用户，但未能在激烈的市场竞争中生存下来。",
+    "funding_amount": "$10.4M",
+    "archetype": "Echo Chamber"
+  },
+  {
+    "company_name": "PostRocket",
+    "industry": "社交网络营销工具",
+    "failure_reasons": "PostRocket因设定不切实际的目标、产品可靠性问题以及无法快速适应Facebook平台变化而关闭。此外，Facebook推出免费的Insights服务进一步削弱了公司的竞争力。",
+    "funding_amount": "未公开",
+    "archetype": "Icarus Syndrome"
+  },
+  {
+    "company_name": "Wesabe",
+    "industry": "金融科技",
+    "failure_reasons": "Wesabe因与数据聚合公司Yodlee的合作谈判破裂而选择自行开发数据获取程序，但这一决定导致了公司的失败。",
+    "funding_amount": "$4.7M",
+    "archetype": "Dunning-Kruger"
+  },
+  {
+    "company_name": "99dresses",
+    "industry": "二手服装交易平台",
+    "failure_reasons": "由于未能产生足够的收入来维持运营，并且扩展到手袋和其他配饰的计划没有成功吸引用户，导致交易量下降。此外，技术创新和管理经验不足也加剧了问题。",
+    "funding_amount": "$3M",
+    "archetype": "Dunning-Kruger"
+  },
+  {
+    "company_name": "Lookery",
+    "industry": "社交网络",
+    "failure_reasons": "Lookery依赖于Facebook平台，当Facebook在2008年进行平台重构后，Lookery无法继续有效帮助其客户。尽管尝试重新制定策略但未能成功，最终被广告技术公司Adknowledge收购。",
+    "funding_amount": "$2M",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "Argyle Social",
+    "industry": "企业SaaS",
+    "failure_reasons": "尽管Argyle Social曾因其直观的仪表板和高效的计划功能在市场上具有竞争力的价格而受到好评，但最终未能持续保持其市场领先地位。",
+    "funding_amount": "$1.7M",
+    "archetype": "Icarus Syndrome"
+  },
+  {
+    "company_name": "Karhoo",
+    "industry": "出行服务",
+    "failure_reasons": "Karhoo由于管理不善和执行失误导致失败，尽管产品创新且有用，但因营销活动中存在的技术漏洞和支付问题而无法吸引投资者信任。",
+    "funding_amount": "$250M",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "ArsDigita",
+    "industry": "企业SaaS",
+    "failure_reasons": "ArsDigita是一家成立于1997年的美国网络开发公司，主要产品是开源工具箱ArsDigita社区系统（ACS），但该公司在运营三年后开始遇到困难。",
+    "funding_amount": "$40M",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "PoliMobile",
+    "industry": "企业SaaS",
+    "failure_reasons": "PoliMobile面临的主要问题是市场需求不足和客户转化率低，尽管技术成熟且试用者众多，但缺乏明确的付费意愿和商业模式。创始人也意识到产品可能在市场尚未准备好时推出。",
+    "funding_amount": "未公开",
+    "archetype": "Sunk Cost Fallacy"
+  },
+  {
+    "company_name": "Tilt",
+    "industry": "金融科技",
+    "failure_reasons": "Tilt曾估值3.75亿美元，但在不到两年的时间里失去了超过95%的价值。公司过度依赖投资者资金维持奢华运营模式，缺乏可持续发展的战略规划，最终因资金链断裂被Airbnb收购。",
+    "funding_amount": "$62M",
+    "archetype": "God Complex"
+  },
+  {
+    "company_name": "Delicious",
+    "industry": "社交书签管理",
+    "failure_reasons": "被雅虎收购后，开发进度严重滞后且技术问题频发；同时面临同类竞品的激烈竞争。",
+    "funding_amount": "未公开",
+    "archetype": "Sunk Cost Fallacy"
+  },
+  {
+    "company_name": "Move Loot",
+    "industry": "二手家具交易平台",
+    "failure_reasons": "Move Loot因扩张过快和成本控制不当导致资金链断裂，最终因无法维持运营而关闭。",
+    "funding_amount": "$22M",
+    "archetype": "Icarus Syndrome"
+  },
+  {
+    "company_name": "QBotix",
+    "industry": "智能硬件",
+    "failure_reasons": "QBotix的双轴追踪系统未能在市场上获得预期的接受度和采用率，竞争对手的技术进步使得单轴追踪系统的成本效益更高，导致资金枯竭。",
+    "funding_amount": "$12.5M",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "Fuhu",
+    "industry": "智能硬件",
+    "failure_reasons": "Fuhu曾连续两年在Inc 500公司榜单上排名第一，但因巨额债务和高烧钱率导致破产。公司在财务管理上的忽视使其无法有效控制运营成本，最终负债高达60至110百万美元。",
+    "funding_amount": "$85M",
+    "archetype": "Icarus Syndrome"
+  },
+  {
+    "company_name": "SellanApp",
+    "industry": "移动应用开发",
+    "failure_reasons": "由于两位联合创始人之间的不健康合作关系和缺乏透明度，公司无法有效运营并改进平台。尽管获得了种子投资，但公司的商业模式并未发生实质性变化，最终导致资金链断裂，宣布破产。",
+    "funding_amount": "未公开",
+    "archetype": "Groupthink"
+  },
+  {
+    "company_name": "Formspring",
+    "industry": "社交网络",
+    "failure_reasons": "由于匿名功能导致的严重网络欺凌问题，Formspring尝试与MIT合作解决但效果有限，限制匿名功能后用户流失，增长停滞。",
+    "funding_amount": "$14.3M",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "Reach.ly",
+    "industry": "企业SaaS",
+    "failure_reasons": "Reach.ly因未能清晰界定新业务方向，将旧有项目与新模式混杂，导致资源分散且缺乏外部投资。技术投入过大而无实际客户反馈，最终因无法有效扩展而失败。",
+    "funding_amount": "未公开",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "FoundationDB",
+    "industry": "企业SaaS",
+    "failure_reasons": "2015年被苹果公司收购后，FoundationDB从其网站上移除了可下载的软件，并使其开源组件不再对公众开放，这给依赖该工具运行业务的开发者社区带来了极大的困扰。",
+    "funding_amount": "$22.7M",
+    "archetype": "Cargo Cult"
+  },
+  {
+    "company_name": "Stayzilla",
+    "industry": "在线住宿预订",
+    "failure_reasons": "Stayzilla作为印度早期进入在线住宿市场的公司之一，在教育市场和创建民宿方面投入了大量资源，但随着市场竞争加剧，竞争对手通过频繁打折来吸引用户，而Stayzilla的运营成本过高，难以应对价格战。",
+    "funding_amount": "$34M",
+    "archetype": "Icarus Syndrome"
+  },
+  {
+    "company_name": "Auctionata",
+    "industry": "在线拍卖",
+    "failure_reasons": "Auctionata因管理层的不道德行为、缺乏透明度以及夸大盈利和销售额而陷入困境，独立审计公司发现该公司几乎没有直接交易，并且存在内部人员操纵竞拍的情况。",
+    "funding_amount": "$95M",
+    "archetype": "God Complex"
+  }
+]
