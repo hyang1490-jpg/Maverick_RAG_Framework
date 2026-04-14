@@ -37,7 +37,7 @@ DATA_PATH = "./icarus_cleansed_db_v3.json"
 CHROMA_PERSIST_DIR = "./chroma_db"
 COLLECTION_NAME = "icarus_failures_final"
 OLLAMA_EMBED_URL = "http://localhost:11434/api/embeddings"
-EMBED_MODEL_NAME = "nomic-embed-text"
+EMBED_MODEL_NAME = "bge-m3"
 
 
 def buildDocument(record: dict) -> str:

@@ -33,7 +33,7 @@ logger = logging.getLogger(__name__)
 CHROMA_PERSIST_DIR = "./chroma_db"
 COLLECTION_NAME = "icarus_failures_final"
 OLLAMA_EMBED_URL = "http://localhost:11434/api/embeddings"
-EMBED_MODEL_NAME = "nomic-embed-text"
+EMBED_MODEL_NAME = "bge-m3"
 LLM_MODEL_NAME = "qwen2.5:14b"
 LLM_NUM_CTX = 4096
 RETRIEVAL_TOP_K = 3
@@ -170,6 +170,14 @@ def generate_judgment_stream(user_input: str):
         m.get("company_name", "N/A") for m in query_results["metadatas"][0]
     ]
     logger.info("[RETRIEVE] matched cases: %s", ", ".join(matched_names))
+
+    # 检索置信度门控：top-1 distance > 0.65 时知识库覆盖不足，跳过生成阶段
+    top1_distance = query_results["distances"][0][0]
+    logger.info("[RETRIEVE] top-1 distance: %.4f", top1_distance)
+    if top1_distance > 0.65:
+        logger.warning("[RETRIEVE] distance exceeds threshold (0.65), aborting generation.")
+        yield "当前知识库无法覆盖此领域的风险分析，请换一个更具体的创业场景描述"
+        return
 
     # 阶段二: Prompt 组装
     logger.info("[ASSEMBLE] building messages ...")

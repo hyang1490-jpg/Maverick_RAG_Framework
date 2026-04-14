@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python ingest_v2.py)",
+      "Bash(python debug_search.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python debug_search.py)"
+    ]
+  }
+}

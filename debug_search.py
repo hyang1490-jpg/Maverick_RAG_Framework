@@ -8,7 +8,7 @@ from chromadb.utils.embedding_functions import OllamaEmbeddingFunction
 CHROMA_PERSIST_DIR = "./chroma_db"
 COLLECTION_NAME = "icarus_failures_final"
 OLLAMA_EMBED_URL = "http://localhost:11434/api/embeddings"
-EMBED_MODEL_NAME = "nomic-embed-text"
+EMBED_MODEL_NAME = "bge-m3"
 
 TEST_QUERY = "我要砸500万做一个社交平台挑战微信"
 
