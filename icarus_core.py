@@ -14,6 +14,7 @@ Project Icarus - 核心战斗模块 (icarus_core.py)
 # -------------------------------------------------------
 """
 
+import json
 import logging
 import sys
 
@@ -74,20 +75,141 @@ def initChromaCollection() -> chromadb.Collection:
     return collection
 
 
+_VALID_ARCHETYPES = (
+    "Cargo Cult, Dunning-Kruger, Echo Chamber, God Complex, "
+    "Groupthink, Icarus Syndrome, Sunk Cost Fallacy, Survivorship Bias"
+)
+_VALID_INDUSTRIES = (
+    "二手家具交易平台, 二手服装交易平台, 云计算基础设施, 互联网浏览器, 企业SaaS, "
+    "共享居住, 出行服务, 在线住宿预订, 在线拍卖, 在线教育, 在线旅游, 在线视频, "
+    "在线零售, 增强现实, 建筑科技, 旅游服务, 智能硬件, 汽车交易市场平台, 汽车租赁, "
+    "玩具零售, 电子商务, 直播平台, 社交书签管理, 社交网络, 社交网络营销工具, "
+    "移动应用开发, 金融科技, 音乐共享平台, 食品科技"
+)
+
+
+def classifyInput(user_input: str) -> dict | None:
+    """
+    轻量分类：调用 LLM 从用户输入中提取 industry 和 archetype。
+    industry 和 archetype 均限定为库中实际存在的枚举值。
+    max_tokens=50，只输出 JSON，解析失败或调用异常时返回 None。
+    """
+    prompt = (
+        f'请从以下输入中判断最可能的行业标签和认知偏差类型。\n'
+        f'industry 必须从以下列表中选一个：{_VALID_INDUSTRIES}\n'
+        f'archetype 必须从以下列表中选一个：{_VALID_ARCHETYPES}\n'
+        f'只输出JSON格式 {{"industry": "...", "archetype": "..."}}，不要输出其他内容。\n'
+        f'输入：{user_input}'
+    )
+    try:
+        response = ollama.chat(
+            model=LLM_MODEL_NAME,
+            messages=[{"role": "user", "content": prompt}],
+            options={"num_predict": 50},
+        )
+        text = response["message"]["content"].strip()
+        return json.loads(text)
+    except Exception as e:
+        logger.warning("[CLASSIFY] failed: %s", e)
+        return None
+
+
+def _queryWithFilter(
+    collection: chromadb.Collection, user_input: str, where: dict
+) -> dict | None:
+    """
+    带 where 过滤的单路检索，取 top-1。
+    若过滤后无匹配文档或查询出错，返回 None。
+    """
+    try:
+        return collection.query(
+            query_texts=[user_input],
+            n_results=1,
+            where=where,
+        )
+    except Exception as e:
+        logger.warning("[RETRIEVE] filtered query failed (where=%s): %s", where, e)
+        return None
+
+
 def retrieveCases(collection: chromadb.Collection, user_input: str) -> dict:
     """
-    阶段一: 检索
-    将用户输入通过 nomic-embed-text 向量化，
-    在 ChromaDB 中执行原生 query 方法，返回 top-k 结果。
+    阶段一: 三路并行召回 + 合并去重
+    - 先用 LLM 轻量分类，提取 industry / archetype
+    - 路线一: where industry 过滤 + 语义检索 top-1
+    - 路线二: where archetype 过滤 + 语义检索 top-1
+    - 路线三: 全局语义检索 top-1（保底）
+    三路结果按 company_name 去重后按 distance 升序排列。
+    分类失败则 fallback 到原始全局 top-3。
 
     NOTE: 使用 collection.query() 而非 similarity_search，
     embedding 由 Collection 绑定的 OllamaEmbeddingFunction 自动处理。
     """
-    results = collection.query(
-        query_texts=[user_input],
-        n_results=RETRIEVAL_TOP_K,
+    # 轻量分类
+    classification = classifyInput(user_input)
+
+    if classification is None:
+        logger.info("[RETRIEVE] classification failed, fallback to global top-%d", RETRIEVAL_TOP_K)
+        return collection.query(query_texts=[user_input], n_results=RETRIEVAL_TOP_K)
+
+    logger.info(
+        "[CLASSIFY] industry=%s, archetype=%s",
+        classification.get("industry"),
+        classification.get("archetype"),
     )
-    return results
+
+    # 三路检索
+    route_results = []
+
+    r1 = _queryWithFilter(
+        collection, user_input,
+        {"industry": {"$eq": classification.get("industry", "")}},
+    )
+    if r1:
+        route_results.append(r1)
+
+    r2 = _queryWithFilter(
+        collection, user_input,
+        {"archetype": {"$eq": classification.get("archetype", "")}},
+    )
+    if r2:
+        route_results.append(r2)
+
+    r3 = collection.query(query_texts=[user_input], n_results=1)
+    route_results.append(r3)
+
+    # 合并去重（按 company_name），保留所有唯一案例
+    seen: set[str] = set()
+    merged_docs: list[str] = []
+    merged_metas: list[dict] = []
+    merged_distances: list[float] = []
+
+    for r in route_results:
+        if not r or not r.get("documents") or not r["documents"][0]:
+            continue
+        for doc, meta, dist in zip(r["documents"][0], r["metadatas"][0], r["distances"][0]):
+            name = meta.get("company_name", "")
+            if name not in seen:
+                seen.add(name)
+                merged_docs.append(doc)
+                merged_metas.append(meta)
+                merged_distances.append(dist)
+
+    if not merged_docs:
+        logger.warning("[RETRIEVE] all routes empty, fallback to global top-%d", RETRIEVAL_TOP_K)
+        return collection.query(query_texts=[user_input], n_results=RETRIEVAL_TOP_K)
+
+    # 按 distance 升序排列，最相关的排最前
+    sorted_triples = sorted(
+        zip(merged_distances, merged_docs, merged_metas), key=lambda x: x[0]
+    )
+    s_distances, s_docs, s_metas = zip(*sorted_triples)
+
+    return {
+        "documents": [list(s_docs)],
+        "metadatas": [list(s_metas)],
+        "distances": [list(s_distances)],
+    }
 
 
 def assemblePrompt(query_results: dict, user_input: str) -> list[dict]:

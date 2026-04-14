@@ -58,12 +58,13 @@ def buildDocument(record: dict) -> str:
 
 def buildMetadata(record: dict) -> dict:
     """
-    构建元数据，存入 company_name、funding_amount、archetype。
+    构建元数据，存入 company_name、funding_amount、archetype、industry。
     """
     return {
         "company_name": record["company_name"],
         "funding_amount": record["funding_amount"],
         "archetype": record["archetype"],
+        "industry": record["industry"],
     }
 
 

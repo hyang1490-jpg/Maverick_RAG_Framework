@@ -3,7 +3,12 @@
     "allow": [
       "Bash(python ingest_v2.py)",
       "Bash(python debug_search.py)",
-      "Bash(PYTHONIOENCODING=utf-8 python debug_search.py)"
+      "Bash(PYTHONIOENCODING=utf-8 python debug_search.py)",
+      "Bash(python -c \"import icarus_core; print\\('OK'\\)\")",
+      "Bash(PYTHONIOENCODING=utf-8 python test_multiroute.py)",
+      "Bash(python -c ':*)",
+      "Bash(rm -rf chroma_db)",
+      "Bash(PYTHONIOENCODING=utf-8 python ingest_v2.py)"
     ]
   }
 }
