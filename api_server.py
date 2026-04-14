@@ -29,6 +29,7 @@ from icarus_core import (
     LLM_NUM_CTX,
     generate_judgment_stream,
     getCollection,
+    retrieveCases,
 )
 
 # ─── 日志配置 ───────────────────────────────────────────
@@ -141,33 +142,51 @@ async def analyzeEndpoint(request: AnalyzeRequest):
     logger.info("[API] Received analyze request: %s", user_input[:100])
 
     try:
-        # ─── 阶段一: ChromaDB 检索 top-1 ──────────────
+        # ─── 阶段一: 三路并行召回 ─────────────────────
         collection = getCollection()
-        results = collection.query(
-            query_texts=[user_input],
-            n_results=1,
-            include=["documents", "metadatas", "distances"],
-        )
+        results = retrieveCases(collection, user_input)
 
-        document = results["documents"][0][0]
-        metadata = results["metadatas"][0][0]
-        distance = results["distances"][0][0]
+        # top-1 用于现有 UI 字段（向后兼容）
+        top_doc  = results["documents"][0][0]
+        top_meta = results["metadatas"][0][0]
+        top_dist = results["distances"][0][0]
 
-        company_name = metadata.get("company_name", "Unknown")
-        archetype = metadata.get("archetype", "Unknown")
-        funding_amount = metadata.get("funding_amount", "Unknown")
+        company_name   = top_meta.get("company_name", "Unknown")
+        archetype      = top_meta.get("archetype", "Unknown")
+        funding_amount = top_meta.get("funding_amount", "Unknown")
 
-        # 从 document 中提取失败原因，拼接 outcome
-        failure_reasons = extractFailureReasons(document)
+        failure_reasons = extractFailureReasons(top_doc)
         outcome = f"融资{funding_amount}后破产: {failure_reasons}"
 
-        # ─── 阶段二: Prompt 组装 ──────────────────────
+        # 所有匹配案例，供前端多卡片渲染
+        matched_cases = []
+        for doc, meta, dist in zip(
+            results["documents"][0],
+            results["metadatas"][0],
+            results["distances"][0],
+        ):
+            matched_cases.append({
+                "company_name":   meta.get("company_name", "Unknown"),
+                "archetype":      meta.get("archetype", "Unknown"),
+                "industry":       meta.get("industry", "Unknown"),
+                "distance":       round(dist, 4),
+                "failure_reasons": extractFailureReasons(doc),
+            })
+
+        # ─── 阶段二: Prompt 组装（所有案例注入） ───────
+        case_blocks = []
+        for i, (doc, meta) in enumerate(
+            zip(results["documents"][0], results["metadatas"][0]), start=1
+        ):
+            case_blocks.append(
+                f"--- 案例 {i}: {meta.get('company_name')}(融资额: {meta.get('funding_amount')}) ---\n"
+                f"核心认知偏差: {meta.get('archetype')}\n"
+                f"案件详情: {doc}"
+            )
+
         user_message = (
-            f"【历史死亡档案】\n"
-            f"--- 案例 1: {company_name}(融资额: {funding_amount}) ---\n"
-            f"核心认知偏差: {archetype}\n"
-            f"案件详情: {document}\n\n"
-            f"【待审判的商业想法】\n{user_input}"
+            f"【历史死亡档案】\n" + "\n\n".join(case_blocks) +
+            f"\n\n【待审判的商业想法】\n{user_input}"
         )
 
         messages = [
@@ -186,11 +205,12 @@ async def analyzeEndpoint(request: AnalyzeRequest):
         diagnosis = response["message"]["content"]
 
         return {
-            "target_id": company_name,
-            "archetype": archetype,
-            "outcome": outcome,
-            "distance": round(distance, 4),
-            "diagnosis": diagnosis,
+            "target_id":     company_name,
+            "archetype":     archetype,
+            "outcome":       outcome,
+            "distance":      round(top_dist, 4),
+            "diagnosis":     diagnosis,
+            "matched_cases": matched_cases,
         }
 
     except Exception as e:

@@ -8,7 +8,11 @@
       "Bash(PYTHONIOENCODING=utf-8 python test_multiroute.py)",
       "Bash(python -c ':*)",
       "Bash(rm -rf chroma_db)",
-      "Bash(PYTHONIOENCODING=utf-8 python ingest_v2.py)"
+      "Bash(PYTHONIOENCODING=utf-8 python ingest_v2.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python api_server.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python -c \"import api_server; print\\('OK'\\)\")",
+      "Bash(taskkill /F /IM python.exe /T)",
+      "Bash(taskkill //F //IM python.exe //T)"
     ]
   }
 }

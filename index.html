@@ -254,6 +254,13 @@
                 </div>
             </div>
         </div>
+        <!-- Matched Cases Section -->
+        <section id="matched-cases-section" class="mb-12 hidden">
+            <h2 class="font-headline text-xl font-black text-on-surface uppercase mb-4 tracking-tight">
+                <span class="text-red-600 mr-2">▌</span>RETRIEVED_CASES — 历史匹配档案
+            </h2>
+            <div id="matched-cases-container" class="flex flex-col gap-4"></div>
+        </section>
         <!-- Diagnostic Section -->
         <section class="mb-12">
             <h2 id="diagnosis-title" class="font-headline text-2xl font-black text-on-surface uppercase mb-4 tracking-tight">MAVERICK 系统诊断书 —
@@ -367,6 +374,67 @@
             typeChar();
         }
 
+        // ── 多案例卡片渲染 ───────────────────────────────
+        /**
+         * 接收 matched_cases 数组，渲染多张历史案例卡片。
+         * 每张卡片展示公司名、archetype、行业、distance、失败原因。
+         */
+        function renderMatchedCases(cases) {
+            var section   = document.getElementById('matched-cases-section');
+            var container = document.getElementById('matched-cases-container');
+            container.innerHTML = '';
+
+            if (!cases || cases.length === 0) {
+                section.classList.add('hidden');
+                return;
+            }
+
+            cases.forEach(function (c, i) {
+                var distClass = c.distance < 0.5
+                    ? 'text-red-500'
+                    : c.distance < 0.8 ? 'text-red-400' : 'text-neutral-400';
+                var borderClass = c.distance < 0.5
+                    ? 'border-red-600'
+                    : 'border-surface-container-highest';
+
+                var card = document.createElement('div');
+                card.className = 'bg-surface-container-low border-l-4 ' + borderClass + ' p-6 font-mono';
+                card.innerHTML =
+                    '<div class="flex justify-between items-start mb-4">' +
+                        '<div>' +
+                            '<span class="text-[10px] text-neutral-500 uppercase tracking-widest">' +
+                                'Case_' + String(i + 1).padStart(2, '0') +
+                            '</span>' +
+                            '<div class="text-2xl font-headline font-bold text-on-surface tracking-tighter mt-1">' +
+                                c.company_name +
+                            '</div>' +
+                        '</div>' +
+                        '<div class="text-right">' +
+                            '<div class="text-[10px] text-neutral-500 uppercase mb-1">DIST</div>' +
+                            '<div class="text-sm font-bold ' + distClass + '">' + c.distance.toFixed(4) + '</div>' +
+                        '</div>' +
+                    '</div>' +
+                    '<div class="grid grid-cols-2 gap-4 mb-4">' +
+                        '<div>' +
+                            '<div class="text-[10px] text-neutral-500 uppercase mb-1">Archetype</div>' +
+                            '<div class="text-xs text-primary-container">' + c.archetype + '</div>' +
+                        '</div>' +
+                        '<div>' +
+                            '<div class="text-[10px] text-neutral-500 uppercase mb-1">Industry</div>' +
+                            '<div class="text-xs text-neutral-300">' + c.industry + '</div>' +
+                        '</div>' +
+                    '</div>' +
+                    '<div class="border-t border-surface-container-highest pt-4">' +
+                        '<div class="text-[10px] text-neutral-500 uppercase mb-2">Failure_Reasons</div>' +
+                        '<div class="text-xs text-neutral-400 leading-relaxed">' + c.failure_reasons + '</div>' +
+                    '</div>';
+
+                container.appendChild(card);
+            });
+
+            section.classList.remove('hidden');
+        }
+
         // ── 威胁评级渲染 ─────────────────────────────────
         /**
          * 根据向量距离计算威胁等级并更新 UI。
@@ -451,6 +519,9 @@
 
                 // ── 诊断书标题 ──────────────────────────
                 diagnosisTitle.textContent = 'MAVERICK 系统诊断书 — ' + data.target_id.toUpperCase() + ' CASE';
+
+                // ── 多案例卡片 ──────────────────────────
+                renderMatchedCases(data.matched_cases || []);
 
                 // ── 诊断书内容 → 打字机效果 ─────────────
                 diagnosisAlert.textContent = '>>> ALERT: PATTERN RECOGNITION ACTIVE — THREAT LEVEL CRITICAL <<<';
